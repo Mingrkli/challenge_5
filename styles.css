@@ -1,0 +1,144 @@
+/*
+- Mobile: 375px
+- Desktop: 1440px
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Primary */
+    --S-Blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    /* Neutral */
+    --VD-Blue-main: hsl(217, 54%, 11%);
+    --VD-Blue-card: hsl(216, 50%, 16%);
+    --VD-Blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+html {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--VD-Blue-main);
+}
+
+h1 {
+    font-size: 21px;
+    color: var(--White);
+}
+
+p {
+    color: var(--S-Blue);
+}
+/* Card
+==========================================*/
+.card {
+    margin: 70px 30px;
+    padding: 20px;
+    height: 500px;
+    background-color: var(--VD-Blue-card);
+    box-shadow: 0 40px 60px var(--VD-Blue-main), 0 40px 20px var(--VD-Blue-main);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h1 {
+    margin: 20px 0 15px 0;
+}
+
+.card p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+@media screen and (min-width: 1440px) {
+    .card {
+        width: 300px;
+        height: 520px;
+    }
+
+    .card p {
+        font-size: 17px;
+    }
+}
+/* Details
+==========================================*/
+.details {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+#ethereum {
+    width: auto;
+    height: auto;
+}
+
+#clock {
+    width: auto;
+    height: auto;
+}
+
+.eth {
+    font-weight: 400;
+    color: var(--Cyan);
+}
+
+.row p {
+    margin: 0;
+}
+
+.row img {
+    margin: 0 5px;
+}
+
+#hr {
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--VD-Blue-line);
+}
+
+/* Card end
+==========================================*/
+#card-end {
+    display: flex;
+}
+
+#card-end img {
+    margin-right: 10px;
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--White);
+    border-radius: 100%;
+}
+
+#card-end p {
+    margin: 0;
+    align-self: center;
+}
+
+#card-end p a {
+    color: var(--White);
+    text-decoration: none;
+}
